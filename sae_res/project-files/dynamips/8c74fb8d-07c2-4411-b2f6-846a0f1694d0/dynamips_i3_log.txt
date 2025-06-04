@@ -1,0 +1,43 @@
+Jun 02 09:13:09.069 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 02 09:13:09.069 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 36741.
+Jun 02 09:13:09.073 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 02 09:13:09.074 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips 
+Jun 02 09:13:09.074 GENERAL: working_dir=/home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips
+Jun 02 09:13:09.074 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips/aabf5a1e-e3b6-4a72-8801-8bae1af53ce3 
+Jun 02 09:13:09.074 GENERAL: working_dir=/home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips/aabf5a1e-e3b6-4a72-8801-8bae1af53ce3
+Jun 02 09:13:09.074 HYPERVISOR: exec_cmd: vm create libre-service 2 c3600 
+Jun 02 09:13:09.079 VM: VM libre-service created.
+Jun 02 09:13:09.081 HYPERVISOR: exec_cmd: vm set_con_tcp_port libre-service 5002 
+Jun 02 09:13:09.081 HYPERVISOR: exec_cmd: c3600 get_mac_addr libre-service 
+Jun 02 09:13:09.083 HYPERVISOR: exec_cmd: vm get_status libre-service 
+Jun 02 09:13:09.083 HYPERVISOR: exec_cmd: vm set_idle_pc libre-service 0x605ef574 
+Jun 02 09:13:09.088 HYPERVISOR: exec_cmd: vm set_ios libre-service /home/iut45/Etudiants/o22403372/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 02 09:13:09.090 HYPERVISOR: exec_cmd: c3600 set_mac_addr libre-service cc02.b973.0000 
+Jun 02 09:13:09.092 HYPERVISOR: exec_cmd: vm set_nvram libre-service 256 
+Jun 02 09:13:09.094 HYPERVISOR: exec_cmd: vm get_status libre-service 
+Jun 02 09:13:09.094 HYPERVISOR: exec_cmd: vm slot_add_binding libre-service 0 0 NM-4E 
+Jun 02 09:13:10.756 HYPERVISOR: exec_cmd: nio create_udp udp-f7b98a2e-351e-4908-a47f-15e7d0ea5683 10010 127.0.0.1 10011 
+Jun 02 09:13:10.979 HYPERVISOR: exec_cmd: vm slot_add_nio_binding libre-service 0 1 udp-f7b98a2e-351e-4908-a47f-15e7d0ea5683 
+Jun 02 09:13:10.982 HYPERVISOR: exec_cmd: vm get_status libre-service 
+Jun 02 09:13:12.181 HYPERVISOR: exec_cmd: nio create_udp udp-f1218720-230b-4528-84f3-73e1c138855c 10036 127.0.0.1 10037 
+Jun 02 09:13:12.184 HYPERVISOR: exec_cmd: vm slot_add_nio_binding libre-service 0 0 udp-f1218720-230b-4528-84f3-73e1c138855c 
+Jun 02 09:13:12.185 HYPERVISOR: exec_cmd: vm get_status libre-service 
+Jun 02 09:13:46.774 HYPERVISOR: exec_cmd: vm set_ghost_status libre-service 2 
+Jun 02 09:13:46.777 HYPERVISOR: exec_cmd: vm set_ghost_file libre-service /home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips/c3640-ik9o3s-mz.124-25c.image-128.ghost 
+Jun 02 09:13:46.778 HYPERVISOR: exec_cmd: vm get_status libre-service 
+Jun 02 09:13:46.781 HYPERVISOR: exec_cmd: vm set_config libre-service configs/i2_startup-config.cfg 
+Jun 02 09:13:46.784 HYPERVISOR: exec_cmd: vm start libre-service 
+Jun 02 09:14:17.013 HYPERVISOR: exec_cmd: vm extract_config libre-service 
+Jun 02 10:04:17.271 HYPERVISOR: exec_cmd: vm extract_config libre-service 
+Jun 02 10:15:17.334 HYPERVISOR: exec_cmd: vm extract_config libre-service 
+Jun 02 10:23:08.472 HYPERVISOR: exec_cmd: vm get_status libre-service 
+Jun 02 10:23:08.475 HYPERVISOR: exec_cmd: vm stop libre-service 
+Jun 02 10:23:08.565 VM: VM libre-service shutdown.
+Jun 02 10:23:08.567 HYPERVISOR: exec_cmd: vm extract_config libre-service 
+Jun 02 10:23:10.159 HYPERVISOR: exec_cmd: vm get_status libre-service 
+Jun 02 10:23:10.159 HYPERVISOR: exec_cmd: vm extract_config libre-service 
+Jun 02 10:23:10.167 HYPERVISOR: exec_cmd: vm delete libre-service 
+Jun 02 10:23:10.167 VM: VM libre-service destroyed.
+Jun 02 10:23:10.175 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 02 10:23:10.374 HYPERVISOR: Stopped.
+Jun 02 10:23:10.374 GENERAL: reset done.

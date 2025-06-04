@@ -1,0 +1,44 @@
+Jun 02 09:13:09.294 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 02 09:13:09.294 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42579.
+Jun 02 09:13:09.298 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 02 09:13:09.300 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips 
+Jun 02 09:13:09.300 GENERAL: working_dir=/home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips
+Jun 02 09:13:09.300 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips/fb1b35a4-395f-4976-9e7c-0e96668aa987 
+Jun 02 09:13:09.300 GENERAL: working_dir=/home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips/fb1b35a4-395f-4976-9e7c-0e96668aa987
+Jun 02 09:13:09.300 HYPERVISOR: exec_cmd: vm create DMZ 4 c3600 
+Jun 02 09:13:09.304 VM: VM DMZ created.
+Jun 02 09:13:09.307 HYPERVISOR: exec_cmd: vm set_con_tcp_port DMZ 5004 
+Jun 02 09:13:09.307 HYPERVISOR: exec_cmd: c3600 get_mac_addr DMZ 
+Jun 02 09:13:09.308 HYPERVISOR: exec_cmd: vm get_status DMZ 
+Jun 02 09:13:09.308 HYPERVISOR: exec_cmd: vm set_idle_pc DMZ 0x605ef574 
+Jun 02 09:13:09.310 HYPERVISOR: exec_cmd: vm set_ios DMZ /home/iut45/Etudiants/o22403372/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 02 09:13:09.312 HYPERVISOR: exec_cmd: c3600 set_mac_addr DMZ cc04.ba23.0000 
+Jun 02 09:13:09.314 HYPERVISOR: exec_cmd: vm set_nvram DMZ 256 
+Jun 02 09:13:09.316 HYPERVISOR: exec_cmd: vm get_status DMZ 
+Jun 02 09:13:09.316 HYPERVISOR: exec_cmd: vm slot_add_binding DMZ 0 0 NM-4E 
+Jun 02 09:13:10.075 HYPERVISOR: exec_cmd: nio create_udp udp-04cda0a5-a726-4547-affa-6cd732883cc8 10002 127.0.0.1 10003 
+Jun 02 09:13:10.309 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ 0 1 udp-04cda0a5-a726-4547-affa-6cd732883cc8 
+Jun 02 09:13:10.312 HYPERVISOR: exec_cmd: vm get_status DMZ 
+Jun 02 09:13:13.025 HYPERVISOR: exec_cmd: nio create_udp udp-20187257-45a0-42c1-86f1-a1f73458a3be 10056 127.0.0.1 10057 
+Jun 02 09:13:13.027 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ 0 0 udp-20187257-45a0-42c1-86f1-a1f73458a3be 
+Jun 02 09:13:13.029 HYPERVISOR: exec_cmd: vm get_status DMZ 
+Jun 02 09:13:13.405 HYPERVISOR: exec_cmd: nio create_udp udp-b6feddc7-fe82-491a-9199-b171be5f4ece 10064 127.0.0.1 10065 
+Jun 02 09:13:13.408 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ 0 2 udp-b6feddc7-fe82-491a-9199-b171be5f4ece 
+Jun 02 09:13:13.413 HYPERVISOR: exec_cmd: vm get_status DMZ 
+Jun 02 09:13:47.035 HYPERVISOR: exec_cmd: vm set_ghost_status DMZ 2 
+Jun 02 09:13:47.045 HYPERVISOR: exec_cmd: vm set_ghost_file DMZ /home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips/c3640-ik9o3s-mz.124-25c.image-128.ghost 
+Jun 02 09:13:47.048 HYPERVISOR: exec_cmd: vm get_status DMZ 
+Jun 02 09:13:47.050 HYPERVISOR: exec_cmd: vm set_config DMZ configs/i4_startup-config.cfg 
+Jun 02 09:13:47.052 HYPERVISOR: exec_cmd: vm start DMZ 
+Jun 02 09:14:17.295 HYPERVISOR: exec_cmd: vm extract_config DMZ 
+Jun 02 10:23:08.605 HYPERVISOR: exec_cmd: vm get_status DMZ 
+Jun 02 10:23:08.606 HYPERVISOR: exec_cmd: vm stop DMZ 
+Jun 02 10:23:08.706 VM: VM DMZ shutdown.
+Jun 02 10:23:08.708 HYPERVISOR: exec_cmd: vm extract_config DMZ 
+Jun 02 10:23:09.979 HYPERVISOR: exec_cmd: vm get_status DMZ 
+Jun 02 10:23:09.981 HYPERVISOR: exec_cmd: vm extract_config DMZ 
+Jun 02 10:23:09.991 HYPERVISOR: exec_cmd: vm delete DMZ 
+Jun 02 10:23:09.991 VM: VM DMZ destroyed.
+Jun 02 10:23:10.002 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 02 10:23:10.059 HYPERVISOR: Stopped.
+Jun 02 10:23:10.059 GENERAL: reset done.

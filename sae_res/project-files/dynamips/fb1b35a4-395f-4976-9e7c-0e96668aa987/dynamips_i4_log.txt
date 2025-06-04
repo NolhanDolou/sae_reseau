@@ -1,0 +1,44 @@
+Jun 02 09:13:09.154 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 02 09:13:09.154 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50569.
+Jun 02 09:13:09.157 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 02 09:13:09.158 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips 
+Jun 02 09:13:09.158 GENERAL: working_dir=/home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips
+Jun 02 09:13:09.159 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips/8c74fb8d-07c2-4411-b2f6-846a0f1694d0 
+Jun 02 09:13:09.159 GENERAL: working_dir=/home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips/8c74fb8d-07c2-4411-b2f6-846a0f1694d0
+Jun 02 09:13:09.159 HYPERVISOR: exec_cmd: vm create Commercial 3 c3600 
+Jun 02 09:13:09.164 VM: VM Commercial created.
+Jun 02 09:13:09.166 HYPERVISOR: exec_cmd: vm set_con_tcp_port Commercial 5003 
+Jun 02 09:13:09.166 HYPERVISOR: exec_cmd: c3600 get_mac_addr Commercial 
+Jun 02 09:13:09.168 HYPERVISOR: exec_cmd: vm get_status Commercial 
+Jun 02 09:13:09.168 HYPERVISOR: exec_cmd: vm set_idle_pc Commercial 0x605ef574 
+Jun 02 09:13:09.171 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22403372/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 02 09:13:09.173 HYPERVISOR: exec_cmd: c3600 set_mac_addr Commercial cc03.b9e1.0000 
+Jun 02 09:13:09.175 HYPERVISOR: exec_cmd: vm set_nvram Commercial 256 
+Jun 02 09:13:09.177 HYPERVISOR: exec_cmd: vm get_status Commercial 
+Jun 02 09:13:09.178 HYPERVISOR: exec_cmd: vm slot_add_binding Commercial 0 0 NM-4E 
+Jun 02 09:13:11.058 HYPERVISOR: exec_cmd: nio create_udp udp-db1828b4-df43-4d1b-a443-69677870cda5 10014 127.0.0.1 10015 
+Jun 02 09:13:11.290 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Commercial 0 1 udp-db1828b4-df43-4d1b-a443-69677870cda5 
+Jun 02 09:13:11.293 HYPERVISOR: exec_cmd: vm get_status Commercial 
+Jun 02 09:13:12.476 HYPERVISOR: exec_cmd: nio create_udp udp-97d3fdea-99fb-4291-aaac-b281f590dc4a 10044 127.0.0.1 10045 
+Jun 02 09:13:12.478 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Commercial 0 0 udp-97d3fdea-99fb-4291-aaac-b281f590dc4a 
+Jun 02 09:13:12.480 HYPERVISOR: exec_cmd: vm get_status Commercial 
+Jun 02 09:13:46.779 HYPERVISOR: exec_cmd: vm set_ghost_status Commercial 2 
+Jun 02 09:13:46.784 HYPERVISOR: exec_cmd: vm set_ghost_file Commercial /home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips/c3640-ik9o3s-mz.124-25c.image-128.ghost 
+Jun 02 09:13:46.788 HYPERVISOR: exec_cmd: vm get_status Commercial 
+Jun 02 09:13:46.791 HYPERVISOR: exec_cmd: vm set_config Commercial configs/i3_startup-config.cfg 
+Jun 02 09:13:46.791 HYPERVISOR: exec_cmd: vm start Commercial 
+Jun 02 09:14:17.032 HYPERVISOR: exec_cmd: vm extract_config Commercial 
+Jun 02 09:27:17.084 HYPERVISOR: exec_cmd: vm extract_config Commercial 
+Jun 02 09:58:47.245 HYPERVISOR: exec_cmd: vm extract_config Commercial 
+Jun 02 10:14:47.329 HYPERVISOR: exec_cmd: vm extract_config Commercial 
+Jun 02 10:23:08.476 HYPERVISOR: exec_cmd: vm get_status Commercial 
+Jun 02 10:23:08.476 HYPERVISOR: exec_cmd: vm stop Commercial 
+Jun 02 10:23:08.566 VM: VM Commercial shutdown.
+Jun 02 10:23:08.572 HYPERVISOR: exec_cmd: vm extract_config Commercial 
+Jun 02 10:23:09.998 HYPERVISOR: exec_cmd: vm get_status Commercial 
+Jun 02 10:23:10.000 HYPERVISOR: exec_cmd: vm extract_config Commercial 
+Jun 02 10:23:10.010 HYPERVISOR: exec_cmd: vm delete Commercial 
+Jun 02 10:23:10.010 VM: VM Commercial destroyed.
+Jun 02 10:23:10.028 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 02 10:23:10.411 HYPERVISOR: Stopped.
+Jun 02 10:23:10.411 GENERAL: reset done.

@@ -1,0 +1,41 @@
+Jun 02 09:13:09.357 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 02 09:13:09.357 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54005.
+Jun 02 09:13:09.364 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 02 09:13:09.366 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips 
+Jun 02 09:13:09.366 GENERAL: working_dir=/home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips
+Jun 02 09:13:09.366 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips/4ef2e4d2-1eac-4ec6-896d-3e2b842f7347 
+Jun 02 09:13:09.366 GENERAL: working_dir=/home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips/4ef2e4d2-1eac-4ec6-896d-3e2b842f7347
+Jun 02 09:13:09.366 HYPERVISOR: exec_cmd: vm create Recherche 5 c3600 
+Jun 02 09:13:09.371 VM: VM Recherche created.
+Jun 02 09:13:09.372 HYPERVISOR: exec_cmd: vm set_con_tcp_port Recherche 5005 
+Jun 02 09:13:09.373 HYPERVISOR: exec_cmd: c3600 get_mac_addr Recherche 
+Jun 02 09:13:09.375 HYPERVISOR: exec_cmd: vm get_status Recherche 
+Jun 02 09:13:09.375 HYPERVISOR: exec_cmd: vm set_idle_pc Recherche 0x605ef574 
+Jun 02 09:13:09.379 HYPERVISOR: exec_cmd: vm set_ios Recherche /home/iut45/Etudiants/o22403372/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 02 09:13:09.381 HYPERVISOR: exec_cmd: c3600 set_mac_addr Recherche cc05.ba59.0000 
+Jun 02 09:13:09.384 HYPERVISOR: exec_cmd: vm set_nvram Recherche 256 
+Jun 02 09:13:09.386 HYPERVISOR: exec_cmd: vm get_status Recherche 
+Jun 02 09:13:09.386 HYPERVISOR: exec_cmd: vm slot_add_binding Recherche 0 0 NM-4E 
+Jun 02 09:13:11.404 HYPERVISOR: exec_cmd: nio create_udp udp-65111553-e2fa-4016-a207-c0d6caefad3b 10020 127.0.0.1 10021 
+Jun 02 09:13:11.626 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Recherche 0 1 udp-65111553-e2fa-4016-a207-c0d6caefad3b 
+Jun 02 09:13:11.628 HYPERVISOR: exec_cmd: vm get_status Recherche 
+Jun 02 09:13:11.729 HYPERVISOR: exec_cmd: nio create_udp udp-9302d05b-f3d8-4e5a-b5db-a96107b7bbbf 10024 127.0.0.1 10025 
+Jun 02 09:13:11.732 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Recherche 0 0 udp-9302d05b-f3d8-4e5a-b5db-a96107b7bbbf 
+Jun 02 09:13:11.734 HYPERVISOR: exec_cmd: vm get_status Recherche 
+Jun 02 09:13:47.049 HYPERVISOR: exec_cmd: vm set_ghost_status Recherche 2 
+Jun 02 09:13:47.052 HYPERVISOR: exec_cmd: vm set_ghost_file Recherche /home/iut45/Etudiants/o22403372/Documents/BUT1/Semestre_2/SAE/SAE_RES/sae_reseau/sae_res/project-files/dynamips/c3640-ik9o3s-mz.124-25c.image-128.ghost 
+Jun 02 09:13:47.072 HYPERVISOR: exec_cmd: vm get_status Recherche 
+Jun 02 09:13:47.078 HYPERVISOR: exec_cmd: vm set_config Recherche configs/i5_startup-config.cfg 
+Jun 02 09:13:47.078 HYPERVISOR: exec_cmd: vm start Recherche 
+Jun 02 09:14:17.309 HYPERVISOR: exec_cmd: vm extract_config Recherche 
+Jun 02 10:23:08.606 HYPERVISOR: exec_cmd: vm get_status Recherche 
+Jun 02 10:23:08.606 HYPERVISOR: exec_cmd: vm stop Recherche 
+Jun 02 10:23:08.695 VM: VM Recherche shutdown.
+Jun 02 10:23:08.696 HYPERVISOR: exec_cmd: vm extract_config Recherche 
+Jun 02 10:23:09.799 HYPERVISOR: exec_cmd: vm get_status Recherche 
+Jun 02 10:23:09.803 HYPERVISOR: exec_cmd: vm extract_config Recherche 
+Jun 02 10:23:09.810 HYPERVISOR: exec_cmd: vm delete Recherche 
+Jun 02 10:23:09.810 VM: VM Recherche destroyed.
+Jun 02 10:23:09.827 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 02 10:23:10.137 HYPERVISOR: Stopped.
+Jun 02 10:23:10.137 GENERAL: reset done.
